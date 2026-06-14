@@ -247,14 +247,8 @@
       height: 68px; max-width: 1200px; margin: 0 auto; padding: 0 24px;
     }
     .nav-logo {
-      display: flex; align-items: center; gap: 10px;
       font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #fff;
     }
-    .nav-logo .bolt {
-      width: 36px; height: 36px; background: var(--accent); border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .nav-logo .bolt svg { width: 18px; height: 18px; fill: #fff; }
     .nav-links { display: flex; align-items: center; gap: 28px; }
     .nav-links a {
       color: rgba(255,255,255,0.78); font-size: 14px; font-weight: 500;
@@ -604,10 +598,11 @@
       text-align: center; box-shadow: var(--shadow);
     }
     .trust-icon {
-      width: 64px; height: 64px; margin: 0 auto 16px; border-radius: 16px;
-      overflow: hidden;
+      width: 72px; height: 72px; margin: 0 auto 16px; border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, rgba(13,43,85,0.08) 0%, rgba(245,166,35,0.1) 100%);
     }
-    .trust-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .trust-icon svg { width: 36px; height: 36px; fill: var(--primary); }
     .trust-card h4 {
       font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 700;
       color: var(--primary-dark); margin-bottom: 8px;
@@ -936,13 +931,8 @@
       margin-bottom: 40px;
     }
     .footer-brand .logo {
-      display: flex; align-items: center; gap: 10px;
       color: #fff; font-family: var(--font-heading); font-size: 18px; font-weight: 800;
       margin-bottom: 16px;
-    }
-    .footer-brand .logo .bolt {
-      width: 32px; height: 32px; background: var(--accent); border-radius: 7px;
-      display: flex; align-items: center; justify-content: center; font-size: 16px;
     }
     .footer-brand p { font-size: 14px; line-height: 1.65; max-width: 300px; }
     .footer-brand .license-note {
@@ -1113,7 +1103,6 @@
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="Dominguez Electric home">
-        <div class="bolt" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 10 10-12h-9l1-10z"/></svg></div>
         Dominguez Electric
       </a>
       <ul class="nav-links" role="list">
@@ -1460,22 +1449,22 @@
       </div>
       <div class="trust-grid">
         <div class="trust-card reveal">
-          <div class="trust-icon"><img src="https://images.pexels.com/photos/8005397/pexels-photo-8005397.jpeg?auto=compress&cs=tinysrgb&w=150" alt="TX License" loading="lazy"></div>
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
           <h4>TX State License</h4>
           <p>#SEC-22-387556<br>Active, TDLR verified</p>
         </div>
         <div class="trust-card reveal">
-          <div class="trust-icon"><img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=150" alt="BuildZoom" loading="lazy"></div>
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 2h1.5v3l2-3h1.7l-2 3 2 3h-1.7l-2-3v3H12V5zM7 7.25h2.5V6.5H7V5h4v3.75H8.5v.75H11V11H7V7.25zM19 13l-6 6-4-4-2 2v-2.5l2-2 4 4 6-6V13z"/></svg></div>
           <h4>BuildZoom Score 98</h4>
           <p>Top 16% of 222K+ Texas licensed contractors</p>
         </div>
         <div class="trust-card reveal">
-          <div class="trust-icon"><img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=150" alt="5 Star Rating" loading="lazy"></div>
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
           <h4>5.0 Star Rating</h4>
           <p>195+ verified reviews across multiple platforms</p>
         </div>
         <div class="trust-card reveal">
-          <div class="trust-icon"><img src="https://images.pexels.com/photos/8005377/pexels-photo-8005377.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Permitted Projects" loading="lazy"></div>
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zm-3-7H9v-2h6v2zm0 4H9v-2h6v2z"/></svg></div>
           <h4>89+ Permitted Projects</h4>
           <p>Residential &amp; commercial, city-inspected</p>
         </div>
@@ -1968,7 +1957,6 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">
-            <div class="bolt"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 10 10-12h-9l1-10z"/></svg></div>
             Dominguez Electric
           </div>
           <p>Licensed electrical contractor serving San Antonio, Elmendorf, and all of Bexar County since 2017. Residential and commercial electrical work done right, every time.</p>
